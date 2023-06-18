@@ -1,0 +1,48 @@
+{
+  "extends": [
+    // Define a set of rules
+    "eslint:recommended",
+    "plugin:import/errors", // Add additional capabilities to ESLint
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hooks/recommended",
+    // inform eslint not to do anything with formatting
+    // as we have prettier for it. Should be last
+    "prettier"
+  ],
+  // 0 - ignore, not an error
+  // 1 - warn, 2 - error
+  "rules": {
+    "react/prop-types": 0, // Disable prop type checking
+    "react/react-in-jsx-scope": 0 // Anywhere we write JSX don't import react
+  },
+  "plugins": [
+    "react",
+    "import", // Recognize import export issues
+    "jsx-a11y" // accessibility issues
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2022, // how modern the JS should be
+    "sourceType": "module", // we will be using import / export
+    "ecmaFeatures": {
+      "jsx": true // recognize jsx syntax
+    }
+  },
+  "env": {
+    // Defines the env and global variables available
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect" // Figure out by yourself
+    },
+    "import/resolver": {
+      // Also look for jsx files
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}
