@@ -24,7 +24,7 @@
   "plugins": ["react", "import", "jsx-a11y", "@typescript-eslint"], // accessibility issues],
   "rules": {
     "react/prop-types": 0, // Disable prop type checking
-    "react/react-in-jsx-scope": 0 // Anywhere we write JSX don't import react
+    "react/react-in-jsx-scope": "off" // Anywhere we write JSX don't import react
   },
   "settings": {
     "react": {
