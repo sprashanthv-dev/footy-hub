@@ -1,0 +1,11 @@
+.container h2 {
+  margin: 2.5rem auto;
+  text-align: center;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.container h2:hover {
+  cursor: pointer;
+  color: var(--secondary);
+}

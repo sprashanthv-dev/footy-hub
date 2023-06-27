@@ -9,7 +9,6 @@ const Navbar = () => {
         <li className={`${styles.navItem} ${styles.brandLogo}`}>
           <img src="/field.png" alt="App Branding Logo" width="64" />
         </li>
-        <li className={styles.navItem}>Competitions & Leagues</li>
         <li className={styles.navItem}>Live Matches</li>
         <li className={styles.navItem}>Teams</li>
         <li className={styles.navItem}>About Me</li>
