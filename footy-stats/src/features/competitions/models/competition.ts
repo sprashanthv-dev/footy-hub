@@ -1,10 +1,10 @@
 import { z } from 'zod';
 
-const Area = z.object({
+export const Area = z.object({
   id: z.number(),
   name: z.string(),
   code: z.string(),
-  flag: z.string()
+  flag: z.string().nullable()
 })
 
 const Winner = z.object({
@@ -18,15 +18,15 @@ const Winner = z.object({
   founded: z.number(),
   clubColors: z.string(),
   venue: z.string(),
-  lastUpdated: z.date()
+  lastUpdated: z.string()
 })
 
 const CurrentSeason = z.object({
   id: z.number(),
-  startDate: z.date(),
-  endDate: z.date(),
-  currentMatchDay: z.number(),
-  winner: Winner || z.null()
+  startDate: z.string(),
+  endDate: z.string(),
+  currentMatchday: z.number().nullable(),
+  winner: Winner.nullable()
 })
 
 export const Competition = z.object({
@@ -37,7 +37,7 @@ export const Competition = z.object({
   type: z.string(),
   emblem: z.string(),
   plan: z.string(),
-  currentSeason: CurrentSeason,
+  currentSeason: CurrentSeason.nullable(),
   numberOfAvailableSeasons: z.number(),
-  lastUpdated: z.date()
+  lastUpdated: z.string()
 })

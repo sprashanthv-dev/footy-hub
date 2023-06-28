@@ -1,6 +1,8 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import { QueryClientProvider } from "@tanstack/react-query";
 
+import queryClient from "./config";
+import Navbar from "./components/Navbar";
 import { CompetitionWrapper } from "./features/competitions";
 
 // TODO: Change the wrapping of QueryClientProvider
@@ -9,7 +11,9 @@ function App() {
   return (
     <main>
       <Navbar />
-      <CompetitionWrapper />
+      <QueryClientProvider client={queryClient}>
+        <CompetitionWrapper />
+      </QueryClientProvider>
     </main>
   );
 }

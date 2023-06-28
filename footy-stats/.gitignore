@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 
 ## Specific folders
-src/data/

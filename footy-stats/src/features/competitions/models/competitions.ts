@@ -9,5 +9,5 @@ const Filter = z.object({
 export const Competitions = z.object({
   count: z.number(),
   filters: Filter,
-  competitions: Competition
+  competitions: z.array(Competition)
 })

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+
 /*Base styles */
 * {
   margin: 0;
@@ -12,8 +14,6 @@
   --tertiary: #d3d04f;
   --alternate: #213363;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 body {
   font-family: Raleway, sans-serif;
