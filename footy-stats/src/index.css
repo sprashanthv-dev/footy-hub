@@ -19,3 +19,16 @@
 body {
   font-family: Raleway, sans-serif;
 }
+
+#app-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrapper {
+  padding-bottom: 3rem;
+}
+
+a {
+  color: var(--alternate-two);
+}
