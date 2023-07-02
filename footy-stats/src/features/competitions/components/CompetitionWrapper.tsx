@@ -9,24 +9,33 @@ import {
 
 import { z } from "zod";
 
-import { Competitions } from "../models/competitions";
 import fetchCompetitions from "../fetchers/fetchCompetitions";
+
+import { Competitions } from "../models/competitions";
+import { modCompetitionList } from "../models/modCompetitions";
+
 import { formatCompetitionsList } from "../utils/formatter.utils";
 
 import styles from "../styles/CompetitionWrapper.module.css";
+import CompetitionList from "../components/CompetitionList";
 
 export const CompetitionWrapper = () => {
   const competitions = useQuery(["competitions-list"], fetchCompetitions);
+  let modCompetitions: modCompetitionList[] = [];
 
   if (!competitions.isLoading) {
     const competitionList = validateSchema(competitions);
-    console.log(formatCompetitionsList(competitionList));
+    modCompetitions = formatCompetitionsList(competitionList);
   }
 
   return (
     <div className={styles.container}>
-      <h2>Competitions and Leagues</h2>
-      <section className={styles.competitions}></section>
+      <h2 className={styles.header}>Competitions and Leagues</h2>
+      <section className={styles.competitions}>
+        {Object.keys(modCompetitions).length && (
+          <CompetitionList competitions={modCompetitions} />
+        )}
+      </section>
     </div>
   );
 };

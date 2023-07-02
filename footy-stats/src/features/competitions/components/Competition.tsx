@@ -1,14 +1,28 @@
 import React from "react";
 
+import { modCompetitionList } from "../models/modCompetitions";
+
 import styles from "../styles/CompetitionWrapper.module.css";
 
-const Competition = () => {
+type competition = {
+  info: modCompetitionList;
+};
+
+const Competition = ({ info }: competition) => {
+  const { emblem, name: leagueName, area = null } = info;
+
+  const areaName = area ? area.name : "-";
+  const areaCode = area ? area.code : "-";
+  const flag = area ? area.flag : null;
+
   return (
     <div className={styles.competition}>
-      <img src="https://crests.football-data.org/ELC.png" alt="League Emblem" />
-      <h2>Championship</h2>
-      <p>England - </p>
-      <img src="https://crests.football-data.org/770.svg" alt="Country Flag" />
+      <img src={emblem} alt="League Emblem" width={64} />
+      <h2>{leagueName}</h2>
+      <p>
+        {areaName} - {areaCode}
+      </p>
+      {flag && <img src={flag} alt="Country Flag" width={64} />}
     </div>
   );
 };

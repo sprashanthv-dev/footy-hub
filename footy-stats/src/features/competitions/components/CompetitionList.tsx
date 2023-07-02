@@ -1,9 +1,23 @@
 import React from "react";
 
+import Competition from "./Competition";
+
+import { modCompetitionList } from "../models/modCompetitions";
+
 import styles from "../styles/CompetitionWrapper.module.css";
 
-const CompetitionList = () => {
-  return <div className={styles.competitions}></div>;
+type listProps = {
+  competitions: modCompetitionList[];
+};
+
+const CompetitionList = ({ competitions }: listProps) => {
+  return (
+    <div className={styles.competitionList}>
+      {competitions.map((competition) => (
+        <Competition info={competition} key={competition.code} />
+      ))}
+    </div>
+  );
 };
 
 export default CompetitionList;

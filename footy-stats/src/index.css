@@ -12,7 +12,8 @@
   --primary: #17594a;
   --secondary: #8eac50;
   --tertiary: #d3d04f;
-  --alternate: #213363;
+  --alternate-one: #213363;
+  --alternate-two: #f6f6f6;
 }
 
 body {

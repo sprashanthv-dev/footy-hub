@@ -1,18 +1,12 @@
-import { Competitions } from "../models/competitions";
-import { Area } from "../models/competition";
 import { z } from "zod";
 
-type modCompetitionList = {
-  area: z.infer<typeof Area>;
-  code: string;
-  emblem: string;
-  name: string;
-};
+import { Competitions } from "../models/competitions";
+import { modCompetitionList } from "../models/modCompetitions";
 
 export const formatCompetitionsList = (
   response: z.infer<typeof Competitions>
 ): modCompetitionList[] => {
-  const competitions = response.competitions;
+  const competitions = response.competitions || [];
 
   return competitions.map((competition): modCompetitionList => {
     const { area: areaInfo, code, emblem, name } = competition;
