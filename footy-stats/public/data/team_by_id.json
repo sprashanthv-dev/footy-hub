@@ -1,0 +1,328 @@
+{
+	"area": {
+		"id": 2088,
+		"name": "Germany",
+		"code": "DEU",
+		"flag": "https://crests.football-data.org/759.svg"
+	},
+	"id": 2,
+	"name": "TSG 1899 Hoffenheim",
+	"shortName": "Hoffenheim",
+	"tla": "TSG",
+	"crest": "https://crests.football-data.org/2.png",
+	"address": "Horrenberger Straße 58 Zuzenhausen 74939",
+	"website": "http://www.achtzehn99.de",
+	"founded": 1921,
+	"clubColors": "Blue / White",
+	"venue": "PreZero Arena",
+	"runningCompetitions": [
+		{
+			"id": 2011,
+			"name": "DFB-Pokal",
+			"code": "DFB",
+			"type": "CUP",
+			"emblem": "https://crests.football-data.org/DFB_CUP.png"
+		},
+		{
+			"id": 2002,
+			"name": "Bundesliga",
+			"code": "BL1",
+			"type": "LEAGUE",
+			"emblem": "https://crests.football-data.org/BL1.png"
+		}
+	],
+	"coach": {
+		"id": 10232,
+		"firstName": "Pellegrino",
+		"lastName": "Matarazzo",
+		"name": "Pellegrino Matarazzo",
+		"dateOfBirth": "1977-11-28",
+		"nationality": "USA",
+		"contract": {
+			"start": "2023-02",
+			"until": "2025-06"
+		}
+	},
+	"squad": [
+		{
+			"id": 316,
+			"name": "Oliver Baumann",
+			"position": "Goalkeeper",
+			"dateOfBirth": "1990-06-02",
+			"nationality": "Germany"
+		},
+		{
+			"id": 10016,
+			"name": "Philipp Pentke",
+			"position": "Goalkeeper",
+			"dateOfBirth": "1985-05-01",
+			"nationality": "Germany"
+		},
+		{
+			"id": 75703,
+			"name": "Luca Philipp",
+			"position": "Goalkeeper",
+			"dateOfBirth": "2000-11-28",
+			"nationality": "Germany"
+		},
+		{
+			"id": 169319,
+			"name": "Nahuel Noll",
+			"position": "Goalkeeper",
+			"dateOfBirth": "2003-03-17",
+			"nationality": "Germany"
+		},
+		{
+			"id": 314,
+			"name": "Kevin Vogt",
+			"position": "Defence",
+			"dateOfBirth": "1991-09-23",
+			"nationality": "Germany"
+		},
+		{
+			"id": 315,
+			"name": "Kevin Akpoguma",
+			"position": "Defence",
+			"dateOfBirth": "1995-04-19",
+			"nationality": "Nigeria"
+		},
+		{
+			"id": 317,
+			"name": "Pavel Kadeřábek",
+			"position": "Defence",
+			"dateOfBirth": "1992-04-25",
+			"nationality": "Czech Republic"
+		},
+		{
+			"id": 330,
+			"name": "Ermin Bičakčić",
+			"position": "Defence",
+			"dateOfBirth": "1990-01-24",
+			"nationality": "Bosnia-Herzegovina"
+		},
+		{
+			"id": 7646,
+			"name": "Angeliño",
+			"position": "Defence",
+			"dateOfBirth": "1997-01-04",
+			"nationality": "Spain"
+		},
+		{
+			"id": 8488,
+			"name": "Stanley Nsoki",
+			"position": "Defence",
+			"dateOfBirth": "1999-04-09",
+			"nationality": "France"
+		},
+		{
+			"id": 9417,
+			"name": "John Brooks",
+			"position": "Defence",
+			"dateOfBirth": "1993-01-28",
+			"nationality": "United States"
+		},
+		{
+			"id": 30548,
+			"name": "Ozan Kabak",
+			"position": "Defence",
+			"dateOfBirth": "2000-03-25",
+			"nationality": "Turkey"
+		},
+		{
+			"id": 144406,
+			"name": "Eduardo Simões",
+			"position": "Defence",
+			"dateOfBirth": "2002-03-02",
+			"nationality": "Portugal"
+		},
+		{
+			"id": 161524,
+			"name": "Justin Che",
+			"position": "Defence",
+			"dateOfBirth": "2003-11-18",
+			"nationality": "United States"
+		},
+		{
+			"id": 326,
+			"name": "Ihlas Bebou",
+			"position": "Midfield",
+			"dateOfBirth": "1994-04-23",
+			"nationality": "Togo"
+		},
+		{
+			"id": 367,
+			"name": "Sebastian Rudy",
+			"position": "Midfield",
+			"dateOfBirth": "1990-02-28",
+			"nationality": "Germany"
+		},
+		{
+			"id": 399,
+			"name": "Dennis Geiger",
+			"position": "Midfield",
+			"dateOfBirth": "1998-06-10",
+			"nationality": "Germany"
+		},
+		{
+			"id": 3460,
+			"name": "Thomas Delaney",
+			"position": "Midfield",
+			"dateOfBirth": "1991-09-03",
+			"nationality": "Denmark"
+		},
+		{
+			"id": 6836,
+			"name": "Grischa Prömel",
+			"position": "Midfield",
+			"dateOfBirth": "1995-01-09",
+			"nationality": "Germany"
+		},
+		{
+			"id": 9405,
+			"name": "Jacob Bruun Larsen",
+			"position": "Midfield",
+			"dateOfBirth": "1998-09-19",
+			"nationality": "Denmark"
+		},
+		{
+			"id": 10195,
+			"name": "Robert Skov",
+			"position": "Midfield",
+			"dateOfBirth": "1996-05-20",
+			"nationality": "Denmark"
+		},
+		{
+			"id": 56829,
+			"name": "Christoph Baumgartner",
+			"position": "Midfield",
+			"dateOfBirth": "1999-08-01",
+			"nationality": "Austria"
+		},
+		{
+			"id": 116259,
+			"name": "Finn Ole Becker",
+			"position": "Midfield",
+			"dateOfBirth": "2000-06-08",
+			"nationality": "Germany"
+		},
+		{
+			"id": 128565,
+			"name": "Angelo Stiller",
+			"position": "Midfield",
+			"dateOfBirth": "2001-04-04",
+			"nationality": "Germany"
+		},
+		{
+			"id": 172574,
+			"name": "Tom Bischof",
+			"position": "Midfield",
+			"dateOfBirth": "2005-06-28",
+			"nationality": "Germany"
+		},
+		{
+			"id": 186086,
+			"name": "Muhammed Damar",
+			"position": "Midfield",
+			"dateOfBirth": "2004-04-09",
+			"nationality": "Germany"
+		},
+		{
+			"id": 191173,
+			"name": "Umut Tohumcu",
+			"position": "Midfield",
+			"dateOfBirth": "2026-06-30",
+			"nationality": "Germany"
+		},
+		{
+			"id": 318,
+			"name": "Andrej Kramarić",
+			"position": "Offence",
+			"dateOfBirth": "1991-06-19",
+			"nationality": "Croatia"
+		},
+		{
+			"id": 7570,
+			"name": "Kasper Dolberg",
+			"position": "Offence",
+			"dateOfBirth": "1997-10-06",
+			"nationality": "Denmark"
+		},
+		{
+			"id": 15101,
+			"name": "Munas Dabbur",
+			"position": "Offence",
+			"dateOfBirth": "1992-05-14",
+			"nationality": "Israel"
+		},
+		{
+			"id": 145562,
+			"name": "Fisnik Asllani",
+			"position": "Offence",
+			"dateOfBirth": "2002-08-08",
+			"nationality": "Germany"
+		}
+	],
+	"staff": [
+		{
+			"id": 393,
+			"firstName": "Alexander",
+			"lastName": "Stolz",
+			"name": "Alexander Stolz",
+			"dateOfBirth": "1983-10-13",
+			"nationality": "Germany",
+			"contract": {
+				"start": "2023-02",
+				"until": "2025-06"
+			}
+		},
+		{
+			"id": 179903,
+			"firstName": "Christian",
+			"lastName": "Weigl",
+			"name": "Christian Weigl",
+			"dateOfBirth": "1976-06-13",
+			"nationality": "Germany",
+			"contract": {
+				"start": "2015-07",
+				"until": "2023-06"
+			}
+		},
+		{
+			"id": 179926,
+			"firstName": "Timo",
+			"lastName": "Gross",
+			"name": "Timo Gross",
+			"dateOfBirth": "1990-08-27",
+			"nationality": "Germany",
+			"contract": {
+				"start": "2019-07",
+				"until": "2023-06"
+			}
+		},
+		{
+			"id": 179962,
+			"firstName": "Frank",
+			"lastName": "Fröhling",
+			"name": "Frank Fröhling",
+			"dateOfBirth": "1978-02-15",
+			"nationality": "Germany",
+			"contract": {
+				"start": "2022-07",
+				"until": "2023-06"
+			}
+		},
+		{
+			"id": 180818,
+			"firstName": "Darius",
+			"lastName": "Scholtysik",
+			"name": "Darius Scholtysik",
+			"dateOfBirth": "1966-08-04",
+			"nationality": "Germany",
+			"contract": {
+				"start": "2022-07",
+				"until": "2023-06"
+			}
+		}
+	],
+	"lastUpdated": "2022-02-25T16:49:58Z"
+}

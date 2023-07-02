@@ -1,0 +1,37 @@
+.nav {
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.navItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navItem:not(.brandLogo) {
+  margin: 1.25rem auto;
+  color: var(--tertiary);
+  font-size: 1.125rem;
+}
+
+.navItem:not(.brandLogo):hover {
+  text-decoration: underline;
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.navItem.brandLogo {
+  -webkit-filter: invert(0.9);
+  filter: invert(0.9);
+}
+
+@media screen and (max-width: 768px) {
+  .navItems {
+    flex-direction: column;
+  }
+
+  .navItem.brandLogo {
+    display: none;
+  }
+}
