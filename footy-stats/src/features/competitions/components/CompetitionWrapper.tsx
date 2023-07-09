@@ -16,8 +16,10 @@ import { modCompetitionList } from "../models/modCompetitions";
 
 import { formatCompetitionsList } from "../utils/formatter.utils";
 
-import styles from "../styles/CompetitionWrapper.module.css";
+import Spinner from "../../../components/Spinner";
 import CompetitionList from "../components/CompetitionList";
+
+import styles from "../styles/CompetitionWrapper.module.css";
 
 export const CompetitionWrapper = () => {
   const competitions = useQuery(["competitions-list"], fetchCompetitions);
@@ -26,6 +28,8 @@ export const CompetitionWrapper = () => {
   if (!competitions.isLoading) {
     const competitionList = validateSchema(competitions);
     modCompetitions = formatCompetitionsList(competitionList);
+  } else {
+    return <Spinner loading={true} />;
   }
 
   return (
