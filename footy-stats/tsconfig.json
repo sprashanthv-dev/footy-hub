@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
     "allowJs": true,
-    "baseUrl": "./",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "outDir": "build/dist",
     "module": "commonjs",
     "target": "es2016",

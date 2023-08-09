@@ -1,6 +1,6 @@
 import React from "react";
 import { HashLoader } from "react-spinners";
-import { spinnerConfig } from "../config/spinner";
+import { spinnerConfig } from "@/config/spinner";
 
 type spinnerProps = {
   loading: boolean;

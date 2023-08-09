@@ -4,6 +4,7 @@
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:import/typescript",
     "plugin:import/errors", // Add additional capabilities to ESLint
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
@@ -11,7 +12,7 @@
     "prettier"
   ],
   "parserOptions": {
-    "project": ["./tsconfig.json"],
+    "project": "./tsconfig.json",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -19,7 +20,8 @@
   },
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "node": true
   },
   "plugins": ["react", "import", "jsx-a11y", "@typescript-eslint"], // accessibility issues],
   "rules": {
@@ -27,10 +29,16 @@
     "react/react-in-jsx-scope": "off" // Anywhere we write JSX don't import react
   },
   "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
     "react": {
       "version": "detect"
     },
     "import/resolver": {
+      "typescript": {
+        "project": ["./tsconfig.json"]
+      },
       "node": {
         "extensions": [".ts", ".tsx"]
       }

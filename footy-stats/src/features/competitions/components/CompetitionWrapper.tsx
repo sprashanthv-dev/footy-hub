@@ -9,15 +9,15 @@ import {
 
 import { z } from "zod";
 
+import Spinner from "@/components/Spinner";
+import { CompetitionList } from "./CompetitionList";
+
 import fetchCompetitions from "../fetchers/fetchCompetitions";
 
 import { Competitions } from "../models/competitions";
 import { modCompetitionList } from "../models/modCompetitions";
 
 import { formatCompetitionsList } from "../utils/formatter.utils";
-
-import Spinner from "../../../components/Spinner";
-import CompetitionList from "../components/CompetitionList";
 
 import styles from "../styles/CompetitionWrapper.module.css";
 

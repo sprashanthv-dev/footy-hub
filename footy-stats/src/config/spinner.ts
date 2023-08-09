@@ -1,4 +1,4 @@
-import { Spinner } from "../types/shared";
+import { Spinner } from "@/types/shared";
 
 export const spinnerConfig: Spinner = {
   loading: true,
