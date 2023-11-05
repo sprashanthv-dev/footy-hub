@@ -14,6 +14,7 @@
   --tertiary: #d3d04f;
   --alternate-one: #213363;
   --alternate-two: #f6f6f6;
+  --black: #000000;
 }
 
 body {
@@ -30,5 +31,10 @@ body {
 }
 
 a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+footer a {
   color: var(--alternate-two);
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Competition from "./Competition";
+import { Competition } from "./Competition";
 
 import { modCompetitionList } from "../models/modCompetitions";
 
@@ -10,7 +10,7 @@ type listProps = {
   competitions: modCompetitionList[];
 };
 
-const CompetitionList = ({ competitions }: listProps) => {
+export const CompetitionList = ({ competitions }: listProps) => {
   return (
     <div className={styles.competitionList}>
       {competitions.map((competition) => (
@@ -19,5 +19,3 @@ const CompetitionList = ({ competitions }: listProps) => {
     </div>
   );
 };
-
-export default CompetitionList;

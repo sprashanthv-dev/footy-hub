@@ -9,6 +9,9 @@ import {
 
 import { z } from "zod";
 
+import Spinner from "@/components/Spinner";
+import { CompetitionList } from "./CompetitionList";
+
 import fetchCompetitions from "../fetchers/fetchCompetitions";
 
 import { Competitions } from "../models/competitions";
@@ -17,7 +20,6 @@ import { modCompetitionList } from "../models/modCompetitions";
 import { formatCompetitionsList } from "../utils/formatter.utils";
 
 import styles from "../styles/CompetitionWrapper.module.css";
-import CompetitionList from "../components/CompetitionList";
 
 export const CompetitionWrapper = () => {
   const competitions = useQuery(["competitions-list"], fetchCompetitions);
@@ -26,6 +28,8 @@ export const CompetitionWrapper = () => {
   if (!competitions.isLoading) {
     const competitionList = validateSchema(competitions);
     modCompetitions = formatCompetitionsList(competitionList);
+  } else {
+    return <Spinner loading={true} />;
   }
 
   return (
