@@ -9,7 +9,7 @@ import {
 import { z } from "zod";
 
 import Spinner from "@/components/Spinner";
-import { CompetitionHistory } from "@/features/schemas/competitionHistory";
+import { CompetitionHistory } from "@/features/competitions/schemas/competitionHistory";
 import { formatCompetitionHistory } from "@/features/competitions/utils/formatter.utils";
 
 import { AllSeasons } from "./AllSeasons";
@@ -40,7 +40,6 @@ export const HistoryList = () => {
 
   return (
     <div>
-      <p>Competition History List Page</p>
       <AllSeasons history={formattedResponse} />
     </div>
   );

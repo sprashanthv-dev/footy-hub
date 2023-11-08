@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { Area } from "@/types/shared";
+import { Area } from "@/features/competitions/schemas/competition";
 import { Season } from "./competition";
 
 export const CompetitionHistory = z.object({

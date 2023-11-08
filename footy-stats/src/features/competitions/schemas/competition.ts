@@ -1,7 +1,5 @@
 import { z } from "zod";
 
-import { Area } from "@/types/shared";
-
 const Winner = z.object({
   id: z.number(),
   name: z.string(),
@@ -14,6 +12,13 @@ const Winner = z.object({
   clubColors: z.string(),
   venue: z.string(),
   lastUpdated: z.string(),
+});
+
+export const Area = z.object({
+  id: z.number(),
+  name: z.string(),
+  code: z.string(),
+  flag: z.string().nullable(),
 });
 
 export const Season = z.object({

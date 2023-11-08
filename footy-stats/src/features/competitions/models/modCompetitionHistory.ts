@@ -1,10 +1,7 @@
-import { TypeOf, z } from "zod";
-import { Season } from "../../schemas/competition";
-
-const SeasonArray = z.array(Season);
-
-type SeasonType = TypeOf<typeof Season>;
-type SeasonArrayType = TypeOf<typeof SeasonArray>;
+import {
+  SeasonArrayType,
+  SeasonType,
+} from "@/features/competitions/types/shared";
 
 export type ModCompetitionHistory = {
   id: number;

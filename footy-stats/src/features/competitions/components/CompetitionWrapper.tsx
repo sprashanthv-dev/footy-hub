@@ -14,7 +14,7 @@ import { CompetitionList } from "./CompetitionList";
 
 import fetchCompetitions from "../fetchers/fetchCompetitions";
 
-import { Competitions } from "../../schemas/competitions";
+import { Competitions } from "../schemas/competitions";
 import { modCompetitionList } from "../models/modCompetitions";
 
 import { formatCompetitionsList } from "../utils/formatter.utils";
