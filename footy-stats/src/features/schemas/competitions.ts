@@ -1,13 +1,13 @@
 import { z } from "zod";
 
-import { Competition } from './competition';
+import { Competition } from "./competition";
 
 const Filter = z.object({
-  client: z.string()
-})
+  client: z.string(),
+});
 
 export const Competitions = z.object({
   count: z.number(),
   filters: Filter,
-  competitions: z.array(Competition)
-})
+  competitions: z.array(Competition),
+});

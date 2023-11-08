@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { Area } from "../models/competition";
+import { Area } from "@/types/shared";
 
 export type modCompetitionList = {
   area: z.infer<typeof Area>;

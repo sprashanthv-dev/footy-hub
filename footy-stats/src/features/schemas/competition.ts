@@ -1,11 +1,6 @@
-import { z } from 'zod';
+import { z } from "zod";
 
-export const Area = z.object({
-  id: z.number(),
-  name: z.string(),
-  code: z.string(),
-  flag: z.string().nullable()
-})
+import { Area } from "@/types/shared";
 
 const Winner = z.object({
   id: z.number(),
@@ -18,16 +13,16 @@ const Winner = z.object({
   founded: z.number(),
   clubColors: z.string(),
   venue: z.string(),
-  lastUpdated: z.string()
-})
+  lastUpdated: z.string(),
+});
 
-const CurrentSeason = z.object({
+export const Season = z.object({
   id: z.number(),
   startDate: z.string(),
   endDate: z.string(),
   currentMatchday: z.number().nullable(),
-  winner: Winner.nullable()
-})
+  winner: Winner.nullable(),
+});
 
 export const Competition = z.object({
   id: z.number(),
@@ -37,7 +32,7 @@ export const Competition = z.object({
   type: z.string(),
   emblem: z.string(),
   plan: z.string(),
-  currentSeason: CurrentSeason.nullable(),
+  currentSeason: Season.nullable(),
   numberOfAvailableSeasons: z.number(),
-  lastUpdated: z.string()
-})
+  lastUpdated: z.string(),
+});
